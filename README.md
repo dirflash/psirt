@@ -6,7 +6,7 @@ This Python script connects to the Cisco PSIRT API and creates a CSV file in the
 
 Using the [Cisco Security Advisories portal](https://tools.cisco.com/security/center/publicationListing.x), it can be difficult to determine what PSIRT notifications have been updated with new information, affected products, workarounds, and patches.
 
-This script utilizes the[Cisco PSIRT openVuln API](https://developer.cisco.com/docs/psirt/?utm_source=devblog&utm_medium=christophervandermade&utm_campaign=securex-page&utm_term=fy22-q2-0000&utm_content=log4j2andpsirt01-ww) to create a CSV file of all updated Cisco PSIRT notifications that have occurred in the last 7 days.
+This script utilizes the [Cisco PSIRT openVuln API](https://developer.cisco.com/docs/psirt/?utm_source=devblog&utm_medium=christophervandermade&utm_campaign=securex-page&utm_term=fy22-q2-0000&utm_content=log4j2andpsirt01-ww) to create a CSV file of all updated Cisco PSIRT notifications that have occurred in the last 7 days.
 
 This CSV will make it easier for a security team to review updated PSIRT information and take any required remediatory actions.
 
