@@ -32,7 +32,7 @@ All the API keys are stored in a config.ini file using [configparser](https://do
 $  python.exe psirt.py
 ```
 
-[psirt.py](https://github.com/dirflash/psirt/blob/master/psirt.py) is the main script. It calls [otoken.py](https://github.com/dirflash/psirt/blob/master/utils/otoken.py) in the utils folder to obtain the OAuth Bearer access token. Then [psirts.py](https://github.com/dirflash/psirt/blob/master/utils/psirts.py) is called, using the Bearer token as authentication, all Cisco PSIRTs updated in the last 7 days are collected into a semi-colon delimited CSV file. The CSV file is created in the reports folder.
+[psirt.py](https://github.com/dirflash/psirt/blob/master/psirt.py) is the main script. It calls [otoken.py](https://github.com/dirflash/psirt/blob/master/utils/otoken.py) in the utils folder to obtain the OAuth Bearer access token. Then [psirts.py](https://github.com/dirflash/psirt/blob/master/utils/psirts.py) is called, using the Bearer token as authentication, all Cisco PSIRTs updated in the last 7 days are collected into a semi-colon delimited CSV file. The CSV file is stored in the reports folder.
 
 ### Sample report
 
