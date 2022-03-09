@@ -22,6 +22,10 @@ All the API keys are stored in a config.ini file using [configparser](https://do
 
 ![Sample config.ini file](https://github.com/dirflash/psirt/blob/master/images/config.jpg)
 
+### Project file structure
+
+![This is a sample file structure](https://github.com/dirflash/psirt/blob/master/images/file_structure.jpg)
+
 ## Usage
 
 ```
