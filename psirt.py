@@ -23,7 +23,7 @@ or implied."""
 
 import configparser
 import logging
-from time import time  # , sleep
+from time import time
 from os import path
 from rich.console import Console
 from rich.logging import RichHandler
