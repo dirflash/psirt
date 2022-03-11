@@ -40,6 +40,8 @@ client_id = config["BEARER"]["client_id"]
 client_secret = config["BEARER"]["client_secret"]
 ```
 
+### Configparser to store and access secrets
+
 All the API keys are stored in a config.ini file using [configparser](https://docs.python.org/3/library/configparser.html). Your config.ini file should look like this:
 
 ![Sample config.ini file](https://github.com/dirflash/psirt/blob/master/images/config.jpg)
