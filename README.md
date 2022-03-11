@@ -18,6 +18,28 @@ More information about the PSIRT OpenVuln API can be found on this [Cisco DevNet
 
 This script requires a Python environment and the libraries included in the [requirements.txt](https://github.com/dirflash/psirt/blob/master/requirements.txt) file.
 
+An account will also need to be created to access the [Cisco API Console](https://apiconsole.cisco.com/).
+
+### Cisco API Console Registration
+
+1. Once logged into the Cisco API Console, click on "My Keys & Apps"
+   ![My Keys & Apps](https://github.com/dirflash/psirt-7-day/blob/master/images/keys_apps.JPG)
+
+2. Click on "Register a New Apps
+3. Give your application a names
+4. Provide an optional description of the application
+5. Select "Client Credentials" in the "OAuth2.0 Credentials" section
+6. Select the "Cisco PSIRT openVuln API" check box
+7. Agree to the "Terms of Service"
+8. Click on "Register"
+
+The generated "Key" and "Client Secret" should be used as the client_id and client_secret objects in psirt.py.
+
+```python
+client_id = config["BEARER"]["client_id"]
+client_secret = config["BEARER"]["client_secret"]
+```
+
 All the API keys are stored in a config.ini file using [configparser](https://docs.python.org/3/library/configparser.html). Your config.ini file should look like this:
 
 ![Sample config.ini file](https://github.com/dirflash/psirt/blob/master/images/config.jpg)
