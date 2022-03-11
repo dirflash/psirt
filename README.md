@@ -1,3 +1,5 @@
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/dirflash/psirt-7-day)
+
 # Cisco PSIRT Updates
 
 This Python script connects to the Cisco PSIRT API and creates a CSV file of PSIRT updates that have occurred in the last 7 days.
