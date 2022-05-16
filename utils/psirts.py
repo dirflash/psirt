@@ -2,7 +2,7 @@
 """This script retrieves and creates a CSV of Cisco PSIRT's updated in the last 7-days
 
 __author__ = "Aaron Davis"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __copyright__ = "Copyright (c) 2022 Cisco and/or its affiliates"
 __license__ = "CISCO SAMPLE CODE LICENSE"
 
