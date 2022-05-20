@@ -22,9 +22,7 @@ This script requires a Python environment and the libraries included in the [req
 
 Import requirements file:
 
-```pip install -r requirements.txt
-
-```
+`pip install -r requirements.txt`
 
 An account will also need to be created to access the [Cisco API Console](https://apiconsole.cisco.com/).
 
