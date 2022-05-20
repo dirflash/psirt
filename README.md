@@ -20,6 +20,12 @@ More information about the PSIRT OpenVuln API can be found on this [Cisco DevNet
 
 This script requires a Python environment and the libraries included in the [requirements.txt](https://github.com/dirflash/psirt/blob/master/requirements.txt) file.
 
+Import requirements file:
+
+```pip install -r requirements.txt
+
+```
+
 An account will also need to be created to access the [Cisco API Console](https://apiconsole.cisco.com/).
 
 ### Cisco API Console Registration
