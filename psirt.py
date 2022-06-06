@@ -22,16 +22,18 @@ IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express
 or implied."""
 
 import configparser
-import logging
 from time import time
 from os import path
-from rich.console import Console
-from rich.logging import RichHandler
 from utils.otoken import otoken
 from utils.psirts import latestpsirt
 
+# import logging
+# from rich.console import Console
+# from rich.logging import RichHandler
+
 FIRST_RUN = True
 
+"""'
 console = Console()
 
 FORMAT = "%(message)s"
@@ -47,6 +49,7 @@ logging.basicConfig(
 )
 
 log = logging.getLogger("rich")
+"""
 
 config = configparser.ConfigParser()
 config.read("config.ini")
@@ -56,20 +59,20 @@ client_secret = config["BEARER"]["client_secret"]
 
 running_dir = path.join(path.dirname(__file__), "")
 
-console.log(f"[bold cyan]--- Parent Directory: {running_dir} ---[/]")
+# console.log(f"[bold cyan]--- Parent Directory: {running_dir} ---[/]")
 
 if __name__ == "__main__":
 
     start_time = time()
 
     if FIRST_RUN is True:
-        console.log("[bold cyan]--- Get Token ---[/]")
+        # console.log("[bold cyan]--- Get Token ---[/]")
         access_token, token_type, token_expires = otoken(
             grant, client_id, client_secret
         )
 
     if start_time >= token_expires:
-        console.log("[bold cyan]--- Refresh Token ---[/]")
+        # console.log("[bold cyan]--- Refresh Token ---[/]")
         access_token, token_type, token_expires = otoken(
             grant, client_id, client_secret
         )
