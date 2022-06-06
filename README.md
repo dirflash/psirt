@@ -67,3 +67,4 @@ $  python.exe psirt.py
 ![This is a sample CSV report](https://github.com/dirflash/psirt/blob/master/images/sample_CSV.JPG)
 
 ! -
+"# psirt-dark-mode" 
