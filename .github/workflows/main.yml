@@ -1,0 +1,15 @@
+name: pipedream-dispatch
+
+# Controls when the action will run. Triggers the workflow on push request, or repository dispatch
+on:
+  repository_dispatch:
+    types: [Postman_Test]
+jobs:
+  build:
+    name: Run actions/setup-node
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build API
+        run: |
+          echo "Build API"
+          sleep 10s
